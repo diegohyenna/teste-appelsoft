@@ -8,6 +8,7 @@ import { TransactionsComponent } from './transactions/transactions.component';
 import { SharedModule } from '../shared/shared.module';
 import { TransactionCreateComponent } from './transactions/create/transaction-create.component';
 import { TransactionEditComponent } from './transactions/edit/transaction-edit.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { TransactionEditComponent } from './transactions/edit/transaction-edit.c
     TransactionsComponent,
     TransactionCreateComponent,
     TransactionEditComponent,
+    NotFoundComponent,
   ],
   imports: [CommonModule, PagesRoutingModule, SharedModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -25,6 +27,7 @@ import { TransactionEditComponent } from './transactions/edit/transaction-edit.c
     TransactionsComponent,
     TransactionCreateComponent,
     TransactionEditComponent,
+    NotFoundComponent,
   ],
 })
 export class PagesModule {}

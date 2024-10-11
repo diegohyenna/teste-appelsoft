@@ -6,11 +6,12 @@ import { LoginComponent } from './login/login.component';
 import { TransactionCreateComponent } from './transactions/create/transaction-create.component';
 import { TransactionEditComponent } from './transactions/edit/transaction-edit.component';
 import { AuthGuard } from '../guards/auth.guard';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full',
   },
   {
@@ -37,10 +38,10 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent,
   },
-  // {
-  //   path: '**',
-  //   component: NotFoundComponent,
-  // },
+  {
+    path: '**',
+    component: NotFoundComponent,
+  },
 ];
 
 @NgModule({

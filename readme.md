@@ -25,10 +25,6 @@ Criar uma key para o projeto
 
 - Executar o comando `php artisan key:generate`
 
-Criar rotas da api
-
-- Executar o comando `php artisan install:api`
-
 Criar banco de dados e popular
 
 - Executar o comando `php artisan migrate`

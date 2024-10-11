@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { TransactionService } from 'src/app/services/transaction.service';
-import { AuthService } from 'src/app/services/auth.service';
+import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { IPage } from 'src/app/interfaces/page.interface';
 import { Router } from '@angular/router';
+import { IPage } from 'src/app/interfaces/page.interface';
+import { AuthService } from 'src/app/services/auth.service';
 import { AlertService } from 'src/app/shared/alert/alert.service';
 
 @Component({
