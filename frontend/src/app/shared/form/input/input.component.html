@@ -1,0 +1,15 @@
+<div class="container">
+  <mat-form-field appearance="outline">
+    <mat-label>{{ label }}</mat-label>
+    <input
+      matInput
+      [placeholder]="placeholder"
+      [formControl]="inputFormControl"
+    />
+  </mat-form-field>
+  <div class="error-messages" *ngFor="let formError of formErrors">
+    <div class="danger" *ngIf="inputFormControl.hasError(formError.type)">
+      {{ formError.message }}
+    </div>
+  </div>
+</div>

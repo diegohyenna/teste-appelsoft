@@ -1,0 +1,9 @@
+<div
+  *ngIf="this.alert"
+  class="alert"
+  [ngClass]="alert.type"
+  (click)="onClosed()"
+>
+  <strong *ngIf="alert.title">{{ alert.title + ": " }}</strong
+  >{{ alert.message }}
+</div>

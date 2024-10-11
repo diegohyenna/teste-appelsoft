@@ -1,0 +1,17 @@
+:host {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 12px;
+
+  mat-form-field {
+    width: 100%;
+  }
+
+  .danger {
+    color: red;
+    padding: 8px 0;
+  }
+}

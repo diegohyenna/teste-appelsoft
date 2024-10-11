@@ -1,0 +1,17 @@
+h1 {
+  margin: 24px 0;
+}
+
+@media (min-width: 1190px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+}
+
+.content {
+  flex-grow: 1;
+}

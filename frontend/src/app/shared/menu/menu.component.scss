@@ -1,0 +1,28 @@
+.link-active {
+  --mat-menu-item-label-text-color: #3f51b5;
+
+  mat-icon {
+    --mat-menu-item-icon-color: #3f51b5;
+  }
+}
+
+.container-brand {
+  display: flex;
+  align-items: center;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+@media (max-width: 480px) {
+  .toolbar-container {
+    height: 90px;
+    display: block;
+  }
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}

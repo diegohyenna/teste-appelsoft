@@ -1,0 +1,52 @@
+<div class="container">
+  <app-chart
+    [inputs]="resume?.total_entradas || 0"
+    [outputs]="resume?.total_saidas || 0"
+  ></app-chart>
+
+  <div class="content">
+    <h1>Entradas</h1>
+    <app-table
+      [columns]="['id', 'tipo', 'descricao', 'valor', 'data']"
+      [tableColumns]="[
+  { attr: 'id', label: 'ID' },
+  { attr: 'tipo', label: 'Tipo da transação' },
+  { attr: 'descricao', label: 'Descrição' },
+  {
+    attr: 'valor',
+    label: 'Valor',
+    pipeName: 'currency', pipeArgs: 'BRL',
+  },
+  {
+    attr: 'data',
+    label: 'Data',
+    pipeName: 'date', pipeArgs: 'dd/MM/yyyy',
+  },
+  ]"
+      [tableDataAttr]="{ type: 'inputs' }"
+      (onPagination)="onPaginationInputs($event)"
+    ></app-table>
+
+    <h1>Saídas</h1>
+    <app-table
+      [columns]="['id', 'tipo', 'descricao', 'valor', 'data']"
+      [tableColumns]="[
+  { attr: 'id', label: 'ID' },
+  { attr: 'tipo', label: 'Tipo da transação' },
+  { attr: 'descricao', label: 'Descrição' },
+  {
+    attr: 'valor',
+    label: 'Valor',
+    pipeName: 'currency', pipeArgs: 'BRL',
+  },
+  {
+    attr: 'data',
+    label: 'Data',
+    pipeName: 'date', pipeArgs: 'dd/MM/yyyy',
+  },
+  ]"
+      [tableDataAttr]="{ type: 'outputs' }"
+      (onPagination)="onPaginationOutputs($event)"
+    ></app-table>
+  </div>
+</div>

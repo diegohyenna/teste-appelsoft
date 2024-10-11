@@ -1,0 +1,31 @@
+<h1>Transações</h1>
+<app-table
+  [columns]="['id', 'tipo', 'descricao', 'valor', 'data', 'acoes']"
+  [tableColumns]="[
+  { attr: 'id', label: 'ID' },
+  { attr: 'tipo', label: 'Tipo da transação' },
+  { attr: 'descricao', label: 'Descrição' },
+  {
+    attr: 'valor',
+    label: 'Valor',
+    pipeName: 'currency', pipeArgs: 'BRL',
+  },
+  {
+    attr: 'data',
+    label: 'Data',
+    pipeName: 'date', pipeArgs: 'dd/MM/yyyy',
+  },
+  {
+    attr: 'acoes',
+    label: 'Ações',
+  }
+  ]"
+  [addCreateButton]="true"
+  [tableDataAttr]="{ type: 'transaction' }"
+  [filterInputs]="filterInputs"
+  (onFilter)="onFilter($event)"
+  (onPagination)="onPagination($event)"
+  (onEdit)="onEdit($event)"
+  (onDelete)="onDelete($event)"
+  (onCreate)="onCreate($event)"
+></app-table>

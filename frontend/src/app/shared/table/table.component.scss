@@ -1,0 +1,60 @@
+.filters {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+}
+
+.create-button {
+  margin-bottom: 12px;
+}
+
+.container-actions {
+  display: flex;
+}
+
+.container {
+  position: relative;
+
+  .table-container {
+    position: relative;
+    min-height: 200px;
+    max-height: auto;
+    height: auto;
+    overflow: auto;
+
+    @media (max-width: 768px) {
+      max-height: 400px;
+    }
+  }
+
+  table {
+    width: 100%;
+  }
+
+  th {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}
+
+.loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-column-number,
+.mat-column-state {
+  max-width: 64px;
+}
+
+.mat-column-created {
+  max-width: 124px;
+}
