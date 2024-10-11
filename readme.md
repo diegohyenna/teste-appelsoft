@@ -6,7 +6,7 @@ Esse é um teste prático para um vaga de desenvolvedor, siga as instruções ab
 
 ### Requisitos do sistema
 
-- É preciso ter o php instalado na máquina na versão 8.3
+- É preciso ter o php instalado na máquina na versão 8.2
 - É preciso ter o composer instalado e o MySQL também
 - É preciso ter o nodejs instalado na máquina na versão 20.9.0
 - É preciso ter o @angular/cli instalado na máquina
